@@ -32,7 +32,7 @@ An **interactive, responsive world map** that visualizes meteorite landings acro
 ---
 ## Live Demo
 View the live map here:  
-[Live Demo]()
+[Live Demo](https://stabat47.github.io/meteorite-landings/)
 
 ---
 
