@@ -1,0 +1,52 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: #eef2f3;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#map-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 1000px;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Meteorite circles hover effect (radius change handled in JS now) */
+circle.meteorite {
+  stroke: #fff;
+  stroke-width: 0.5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s, filter 0.2s;
+}
+
+circle.meteorite:hover {
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+  opacity: 0.9;
+}
